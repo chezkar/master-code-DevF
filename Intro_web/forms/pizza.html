@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <body>
+        <form>
+            <label>Nombre
+                <input name="cliente" placeholder="Escriba su nombre" minlength="2" maxlength="25" type="text" required>
+            </label>
+            <br>
+            <br>
+            <label for="email_cliente">Email
+                <input id="email_cliente" name="email" placeholder="Escriba su correo ej. coso@coso.org" minlength="6"
+                    maxlength="20" type="email" required>
+            </label>
+            <br>
+            <br>
+            <label for="direccion_cliente">Dirección de envio</label>
+            <textarea id="direccion_cliente" name="direccion" rows="2" cols="4" required></textarea>
+            <br>
+            <br>
+            <label for="cantidad_pizza">Cantidad de pizza</label>
+            <input id="cantidad_pizza" name="cantidad" placeholder="Ingrese cantidad a ordenar" min="1" max="100"
+                type="number" required>
+            <br>
+            <br>
+            <label for="tipo_pizza">Tipo de pizza</label>
+            <select id="tipo_pizza" name="tipo_pizza" required>
+                <option value="">Selecione tipo de pizza</option>
+                <option value="napolitana">Napolitana</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="vegana">Vegana</option>
+                <option value="4_quesos">4 Quesos</option>
+            </select>
+            <br>
+            <br>
+            <label for="time">Hora de entrega</label>
+            <input id="time" name="hora" type="time">
+            <br>
+            <br>
+            <button type="submit">ENVIAR</button>
+            <button type="reset">LIMPIAR</button>
+        </form>
+    </body>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
